@@ -1,0 +1,49 @@
+intents:
+    - affirm
+    - inform
+    - greet
+    - goodbye
+    - app_issue
+    - url_issue
+    - thank
+    - bye
+
+entities:
+    - application
+    - url
+    - description
+
+slots:
+    application:
+        type: text
+    url:
+        type: text
+    description:
+        type: text
+    
+templates:
+    utter_greet:
+        - Hey,How can I help you?
+    utter_goodbye:
+        - See u soon
+    utter_ask_application:
+        - What is the application name?
+    utter_ask_url:
+        - What is the url?
+    utter_ask_description:
+        - Can u provide the detail information about the issue
+    utter_solution:
+        - Don't worry it will be forward to respective technical team
+    utter_thank:
+        - Thank you
+actions:
+    - utter_greet
+    - utter_goodbye
+    - utter_ask_application
+    - utter_ask_url
+    - utter_ask_description
+    - utter_solution
+    - utter_thank
+
+ 
+
